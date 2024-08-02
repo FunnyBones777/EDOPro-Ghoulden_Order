@@ -17,6 +17,6 @@ function s.initial_effect(c)
 	e2:SetCode(EFFECT_PIERCE)
 	e2:SetRange(LOCATION_PZONE)
 	e2:SetTargetRange(LOCATION_MZONE,0)
-	e2:SetTarget(aux.TargetBoolFunction(Card.IsSetCard,order))
+	e2:SetTarget(aux.TargetBoolFunction(Card.IsMonster))
 	c:RegisterEffect(e2)
 end
