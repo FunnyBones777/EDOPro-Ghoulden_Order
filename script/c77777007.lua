@@ -1,4 +1,5 @@
 -- Gōkai of the Ghoulden Order
+-- Coded by FunnyBones777
 local s,id=GetID()
 function s.initial_effect(c)
 	local e1=Effect.CreateEffect(c)
@@ -10,5 +11,6 @@ function s.initial_effect(c)
 	c:RegisterEffect(e1)
 end
 function s.value(e,c)
-	return Duel.GetMatchingGroupCount(Card.IsSetCard,girls:GetControler(),LOCATION_GRAVE,0,nil)*520
+	return Duel.GetMatchingGroupCount(Card.IsSetCard,0x420a:GetControler(),LOCATION_GRAVE,0,nil)*520
 end
+s.listed_series={0x420a}
