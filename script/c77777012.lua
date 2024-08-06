@@ -15,14 +15,14 @@ function s.initial_effect(c)
 	e1:SetTarget(s.pendtg)
 	e1:SetOperation(s.pendop)
 	c:RegisterEffect(e1)
-  --flip
+  	--flip
 	local e2=Effect.CreateEffect(c)
 	e2:SetDescription(aux.Stringid(id,1))
 	e2:SetCategory(CATEGORY_TOHAND)
 	e2:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_FLIP+EFFECT_TYPE_TRIGGER_O)
 	e2:SetProperty(EFFECT_FLAG_PLAYER_TARGET)
-	e1:SetTarget(s.fliptg)
-	e1:SetOperation(s.flipop)
+	e2:SetTarget(s.fliptg)
+	e2:SetOperation(s.flipop)
 	c:RegisterEffect(e2)
 	--Change to face-down
 	local e3=Effect.CreateEffect(c)
