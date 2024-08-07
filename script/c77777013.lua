@@ -1,5 +1,6 @@
 -- Ghoulden Protection
 -- Coded by FunnyBones777
+-- Artwork by @orig_lina on Twitter
 local s,id=GetID()
 function s.initial_effect(c)
 	--Activate
