@@ -3,7 +3,7 @@ local s,id=GetID()
 function s.initial_effect(c)
 	c:EnableReviveLimit()
 	--fusion material
-	Fusion.AddProcMixRep(c,true,true,77777015,aux.FilterBoolFunctionEx(Card.IsSetCard,0x420a),1,99,aux.FilterBoolFunctionEx(Card.IsSetCard,0x420b),1,1)
+	Fusion.AddProcMixRep(c,true,true,77777015,aux.FilterBoolFunctionEx(Card.IsSetCard,0x420a),1,99)
 	--spsummon condition
 	local e2=Effect.CreateEffect(c)
 	e2:SetType(EFFECT_TYPE_SINGLE)
@@ -24,7 +24,7 @@ function s.initial_effect(c)
 	c:RegisterEffect(e4)
 end
 s.listed_names={77777015}
-s.material_setcode={0x420a,0x420b}
+s.material_setcode={0x420a}
 function s.sucop(e,tp,eg,ep,ev,re,r,rp)
 	local c=e:GetHandler()
 	local e1=Effect.CreateEffect(c)
