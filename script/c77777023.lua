@@ -3,7 +3,6 @@
 local s,id=GetID()
 function s.initial_effect(c)
 	local e1=Fusion.CreateSummonEff(c,s.ffilter,Fusion.OnFieldMat(Card.IsAbleToRemove),s.fextra,Fusion.BanishMaterial,nil,nil,nil,nil,nil,nil,nil,nil,nil,s.extratg)
-	e1:SetCountLimit(1,id)
 	c:RegisterEffect(e1)
 end
 function s.ffilter(c)
