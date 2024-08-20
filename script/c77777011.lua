@@ -18,10 +18,10 @@ function s.initial_effect(c)
 	e1:SetOperation(s.operation)
 	c:RegisterEffect(e1)
 end
-s.listed_series={0x0420}
+s.listed_series={0x420}
 function s.filter(c,tp)
 	return c:IsPreviousLocation(LOCATION_MZONE) and c:IsPreviousControler(tp)
-		and c:GetControler()==tp and c:IsReason(REASON_DESTROY) and c:IsSetCard(0x0420)
+		and c:GetControler()==tp and c:IsReason(REASON_DESTROY) and c:IsSetCard(0x420)
 end
 function s.condition(e,tp,eg,ep,ev,re,r,rp)
 	return eg:IsExists(s.filter,1,nil,tp)

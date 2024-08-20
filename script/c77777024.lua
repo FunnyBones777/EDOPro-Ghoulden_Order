@@ -26,13 +26,13 @@ function s.initial_effect(c)
 	e3:SetTargetRange(1,0)
 	c:RegisterEffect(e3)
 end
-s.listed_series={0x0420}
+s.listed_series={0x420}
 function s.cpcost(e,tp,eg,ep,ev,re,r,rp,chk)
 	e:SetLabel(1)
 	return true
 end
 function s.filter(c)
-	return c:GetType()==TYPE_SPELL and c:IsSetCard(0x0420) and c:IsAbleToGraveAsCost()
+	return c:GetType()==TYPE_SPELL and c:IsSetCard(0x420) and c:IsAbleToGraveAsCost()
 		and c:CheckActivateEffect(false,true,false)~=nil
 end
 function s.cptg(e,tp,eg,ep,ev,re,r,rp,chk)

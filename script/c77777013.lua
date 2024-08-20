@@ -1,5 +1,6 @@
 -- Ghoulden Protection
 -- Coded by FunnyBones777
+-- Artwork by @orig_lina on Twitter
 local s,id=GetID()
 function s.initial_effect(c)
 	--Activate
@@ -18,9 +19,9 @@ function s.initial_effect(c)
 	e2:SetOperation(s.indop)
 	c:RegisterEffect(e2)
 end
-s.listed_series={0x0420}
+s.listed_series={0x420}
 function s.cfilter(c,e,tp)
-	return c:IsSetCard(0x0420) and c:IsSummonPlayer(tp) and c:IsSummonType(SUMMON_TYPE_PENDULUM)
+	return c:IsSetCard(0x420) and c:IsSummonPlayer(tp) and c:IsSummonType(SUMMON_TYPE_PENDULUM)
 		and (not e or c:IsRelateToEffect(e))
 end
 function s.indcon(e,tp,eg,ep,ev,re,r,rp)

@@ -31,9 +31,9 @@ function s.initial_effect(c)
 	c:RegisterEffect(e2)
 end
 s.material_setcode={0x420a}
-s.listed_series={0x0420}
+s.listed_series={0x420}
 function s.spfilter(c,e,tp,zone)
-	return c:IsLevelBelow(4) and c:IsSetCard(0x0420) and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP,tp,zone)
+	return c:IsLevelBelow(4) and c:IsSetCard(0x420) and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP,tp,zone)
 end
 function s.sptg1(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.IsExistingMatchingCard(s.spfilter,tp,LOCATION_GRAVE,0,1,nil,e,tp,e:GetHandler():GetLinkedZone(tp)) end
@@ -62,7 +62,7 @@ function s.spop1(e,tp,eg,ep,ev,re,r,rp)
 	Duel.SpecialSummonComplete()
 end
 function s.filter(c,e,tp)
-	return c:IsSetCard(0x0420) and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP,tp)
+	return c:IsSetCard(0x420) and c:IsCanBeSpecialSummoned(e,0,tp,false,false,POS_FACEUP,tp)
 end
 function s.sptg2(e,tp,eg,ep,ev,re,r,rp,chk)
 	if chk==0 then return Duel.GetLocationCount(tp,LOCATION_MZONE)>0
