@@ -22,7 +22,7 @@ function s.initial_effect(c)
 	e3:SetTargetRange(LOCATION_MZONE,0)
 	e3:SetTarget(s.atktg)
 	e3:SetCondition(s.atkcon)
-	e3:SetValue(3000)
+	e3:SetValue(4400)
 	c:RegisterEffect(e3)
 end
 s.listed_series={0x420,0x420a}
