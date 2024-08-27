@@ -1,4 +1,4 @@
--- Neko Nasty Diamond Mac
+-- Nasty Mutt Mac
 -- Coded by FunnyBones777
 local s,id=GetID()
 function s.initial_effect(c)

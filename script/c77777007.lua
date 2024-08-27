@@ -1,4 +1,4 @@
--- Neko Nasty Emerald Francis
+-- Nasty Mutt Francis
 -- Coded by FunnyBones777
 local s,id=GetID()
 function s.initial_effect(c)

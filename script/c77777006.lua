@@ -1,4 +1,4 @@
--- Neko Nasty Topaz Eugine
+-- Nasty Mutt Eugine
 -- Coded by FunnyBones777
 local s,id=GetID()
 function s.initial_effect(c)

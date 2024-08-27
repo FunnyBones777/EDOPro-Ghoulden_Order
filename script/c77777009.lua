@@ -1,4 +1,4 @@
--- Neko Nasty Ruby Julian
+-- Nasty Mutt Julian
 -- Coded by FunnyBones777
 local s,id=GetID()
 function s.initial_effect(c)
